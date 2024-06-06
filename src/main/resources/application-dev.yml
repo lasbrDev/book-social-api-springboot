@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.15.50:5432/book_social_network
+    username: postgres
+    password: postgress
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  mail:
+    host: 192.168.15.50
+    port: 1025
+    username: developer
+    password: password
+    properties:
+      mail:
+        smtp:
+          trust: "*"
+        auth: false
+        starttls:
+          enable: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writetimeout: 5000
+maildev:
+  web-url: http://192.168.15.50:1080
