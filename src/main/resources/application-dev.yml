@@ -33,3 +33,10 @@ spring:
         writetimeout: 5000
 maildev:
   web-url: http://192.168.15.50:1080
+
+application:
+  security:
+    jwt:
+      secret-key: ap#$1025%7uu!1fyuw@*!r71569)%thh%&l35bfbtje%*=k&5j
+      expiration: 8640000
+
