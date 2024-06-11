@@ -1,5 +1,6 @@
 package br.com.lasbr.book.auth;
 
+import br.com.lasbr.book.email.EmailService;
 import br.com.lasbr.book.role.RoleRepository;
 import br.com.lasbr.book.user.Token;
 import br.com.lasbr.book.user.TokenRepository;
@@ -21,6 +22,7 @@ public class AuthenticationService {
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
     private final TokenRepository tokenRepository;
+    private final EmailService emailService;
 
     public void register(RegistrationRequest request) {
         var userRole = roleRepository.findByName("ROLE_USER")
