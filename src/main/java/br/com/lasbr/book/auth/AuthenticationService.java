@@ -1,18 +1,22 @@
 package br.com.lasbr.book.auth;
 
 import br.com.lasbr.book.email.EmailService;
+import br.com.lasbr.book.email.EmailTemplateName;
 import br.com.lasbr.book.role.RoleRepository;
 import br.com.lasbr.book.user.Token;
 import br.com.lasbr.book.user.TokenRepository;
 import br.com.lasbr.book.user.User;
 import br.com.lasbr.book.user.UserRepository;
+import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;
 import java.time.LocalDateTime;
 import java.util.List;
+
 
 @Service
 @RequiredArgsConstructor
@@ -24,7 +28,11 @@ public class AuthenticationService {
     private final TokenRepository tokenRepository;
     private final EmailService emailService;
 
-    public void register(RegistrationRequest request) {
+
+    @Value("${application.mailing.frontend.activation-url}")
+    private String activationUrl;
+
+    public void register(RegistrationRequest request) throws MessagingException {
         var userRole = roleRepository.findByName("ROLE_USER")
                 .orElseThrow(() -> new IllegalArgumentException("Role User was not initialized"));
         var user = User.builder()
@@ -40,13 +48,17 @@ public class AuthenticationService {
         sendValidationEmail(user);
     }
 
-    private void sendValidationEmail(User user) {
+    private void sendValidationEmail(User user) throws MessagingException {
         var newToken = generateAndSaveActivationToken(user);
-        //To-Do Email validation
+        emailService.sendEmail(
+                user.getEmail(),
+                user.fullName(), EmailTemplateName.ACTIVATE_ACCOUNT,
+                activationUrl,
+                newToken, "Account activation");
     }
 
     private String generateAndSaveActivationToken(User user) {
-        String generatedToken = generateActivationCode(6);
+        String generatedToken = generateActivationCode();
         var token = Token.builder()
                 .token(generatedToken)
                 .createdAt(LocalDateTime.now())
@@ -57,11 +69,12 @@ public class AuthenticationService {
         return generatedToken;
     }
 
-    private String generateActivationCode(int length) {
+    private String generateActivationCode() {
+        int codeLength = 6;
         String characters = "0123456789";
         StringBuilder codeBuilder = new StringBuilder();
         SecureRandom secureRandom = new SecureRandom();
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < 6; i++) {
             int randomIndex = secureRandom.nextInt(characters.length());
             codeBuilder.append(characters.charAt(randomIndex));
         }
