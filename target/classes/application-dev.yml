@@ -37,7 +37,7 @@ maildev:
 application:
   security:
     jwt:
-      secret-key: ap#$1025%7uu!1fyuw@*!r71569)%thh%&l35bfbtje%*=k&5j
+      secret-key: YXAjJDEwMjUlN3V1ITFmeXV3QCohcjcxNTY5KSV0aGglJmwzNWJmYnRqZSUqPWsmNWo=
       expiration: 8640000
   mailing:
     frontend:
