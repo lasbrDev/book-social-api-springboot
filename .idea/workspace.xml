@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a3c5ba-3bd4-45ba-b20c-c0918f265996" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/handler/BusinessErrorCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/handler/BusinessErrorCodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/handler/BusinessErrorCodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/handler/BusinessErrorCodes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/feedback/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/feedback/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book$BookBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book$BookBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book$BookBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book$BookBuilderImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/feedback/Feedback.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/feedback/Feedback.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
