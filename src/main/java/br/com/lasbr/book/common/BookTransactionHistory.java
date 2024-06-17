@@ -1,6 +1,10 @@
 package br.com.lasbr.book.common;
 
+import br.com.lasbr.book.book.Book;
+import br.com.lasbr.book.user.User;
 import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,8 +18,14 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BookTransactionHistory extends BaseEntity {
-    // TO-DO user relationship
-    // TO-DO book relationship
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    @ManyToOne
+    @JoinColumn(name = "book_id")
+    private Book book;
 
     private boolean returned;
     private boolean returnApproved;

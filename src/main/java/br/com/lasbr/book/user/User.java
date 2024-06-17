@@ -1,6 +1,7 @@
 package br.com.lasbr.book.user;
 
 import br.com.lasbr.book.book.Book;
+import br.com.lasbr.book.common.BookTransactionHistory;
 import br.com.lasbr.book.role.Role;
 import jakarta.persistence.*;
 import lombok.*;
@@ -46,6 +47,9 @@ public class User implements UserDetails, Principal {
 
     @OneToMany(mappedBy = "owner")
     private List<Book> books;
+
+    @OneToMany(mappedBy = "user")
+    private List<BookTransactionHistory> histories;
 
     @CreatedDate
     @Column(nullable = false , updatable = false)
