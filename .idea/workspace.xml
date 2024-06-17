@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a3c5ba-3bd4-45ba-b20c-c0918f265996" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +19,8 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -118,7 +119,7 @@
       <workItem from="1718135024373" duration="9758000" />
       <workItem from="1718216170471" duration="708000" />
       <workItem from="1718217083112" duration="9764000" />
-      <workItem from="1718649956518" duration="4599000" />
+      <workItem from="1718649956518" duration="6935000" />
     </task>
     <servers />
   </component>
