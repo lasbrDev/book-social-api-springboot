@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2a3c5ba-3bd4-45ba-b20c-c0918f265996" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/common/BookTransactionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/common/BookTransactionHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book$BookBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book$BookBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book$BookBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book$BookBuilderImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/book/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/common/BookTransactionHistory$BookTransactionHistoryBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/common/BookTransactionHistory$BookTransactionHistoryBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/common/BookTransactionHistory$BookTransactionHistoryBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/common/BookTransactionHistory$BookTransactionHistoryBuilderImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/common/BookTransactionHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/common/BookTransactionHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/user/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/user/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/user/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/user/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/user/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,8 +100,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -130,6 +123,7 @@
       <workItem from="1718216170471" duration="708000" />
       <workItem from="1718217083112" duration="9764000" />
       <workItem from="1718649956518" duration="6935000" />
+      <workItem from="1719079649100" duration="210000" />
     </task>
     <servers />
   </component>
