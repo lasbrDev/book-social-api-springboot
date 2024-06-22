@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b2a3c5ba-3bd4-45ba-b20c-c0918f265996" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/BookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/BookService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +23,8 @@
         <option value="CSS File" />
         <option value="Enum" />
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -122,6 +126,7 @@
       <workItem from="1718217083112" duration="9764000" />
       <workItem from="1718649956518" duration="6935000" />
       <workItem from="1719079649100" duration="210000" />
+      <workItem from="1719098100334" duration="1572000" />
     </task>
     <servers />
   </component>
