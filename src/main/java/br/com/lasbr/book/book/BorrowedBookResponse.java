@@ -10,11 +10,11 @@ import lombok.*;
 public class BorrowedBookResponse {
 
     private Integer id;
-    private String title;;
+    private String title;
     private String authorName;
-    private String isbn;;
+    private String isbn;
     private String owner;
     private double rate;
-    private boolean returned;;
+    private boolean returned;
     private boolean returnApproved;
 }

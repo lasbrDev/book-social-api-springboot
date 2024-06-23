@@ -1,5 +1,6 @@
 package br.com.lasbr.book.book;
 
+import br.com.lasbr.book.exception.OperationNotPermittedException;
 import br.com.lasbr.book.history.BookTransactionHistory;
 import br.com.lasbr.book.common.PageResponse;
 import br.com.lasbr.book.history.BookTransactionHistoryRepository;
@@ -14,6 +15,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 
 import static br.com.lasbr.book.book.BookSpecification.withOwnerId;
 
@@ -110,5 +112,17 @@ public class BookService {
                 allBorrowedBooks.isFirst(),
                 allBorrowedBooks.isLast()
         );
+    }
+
+    public Integer updateShareableStatus(Integer bookId, Authentication connectedUser) {
+        Book book = bookRepository.findById(bookId)
+                .orElseThrow(() -> new EntityNotFoundException("No book found with the ID: " + bookId));
+        User user = ((User) connectedUser.getPrincipal());
+        if (!Objects.equals(book.getOwner().getBooks(), user.getId())) {
+            throw new OperationNotPermittedException("You cannot update books shareable status!");
+        }
+        book.setShareable(!book.isShareable());
+        bookRepository.save(book);
+        return bookId;
     }
 }
