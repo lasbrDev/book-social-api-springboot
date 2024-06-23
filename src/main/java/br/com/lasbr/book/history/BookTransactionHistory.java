@@ -1,6 +1,7 @@
-package br.com.lasbr.book.common;
+package br.com.lasbr.book.history;
 
 import br.com.lasbr.book.book.Book;
+import br.com.lasbr.book.common.BaseEntity;
 import br.com.lasbr.book.user.User;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;

@@ -1,7 +1,7 @@
 package br.com.lasbr.book.book;
 
 import br.com.lasbr.book.common.BaseEntity;
-import br.com.lasbr.book.common.BookTransactionHistory;
+import br.com.lasbr.book.history.BookTransactionHistory;
 import br.com.lasbr.book.feedback.Feedback;
 import br.com.lasbr.book.user.User;
 import jakarta.persistence.*;
