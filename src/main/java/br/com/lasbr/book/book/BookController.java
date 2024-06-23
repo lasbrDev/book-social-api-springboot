@@ -75,4 +75,10 @@ public class BookController {
             @PathVariable("book-id") Integer bookId, Authentication connectedUser) {
         return ResponseEntity.ok(service.borrowBok(bookId, connectedUser));
     }
+
+    @PatchMapping("/borrow/return/{book-id}")
+    public ResponseEntity<Integer> returnBorrowBook(
+            @PathVariable("book-id") Integer bookId, Authentication connectedUser) {
+        return ResponseEntity.ok(service.returnBorrowedBook(bookId, connectedUser));
+    }
 }
