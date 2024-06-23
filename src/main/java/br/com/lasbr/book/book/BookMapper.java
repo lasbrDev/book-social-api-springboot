@@ -1,5 +1,6 @@
 package br.com.lasbr.book.book;
 
+import br.com.lasbr.book.file.FileUtils;
 import br.com.lasbr.book.history.BookTransactionHistory;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +29,7 @@ public class BookMapper {
                 .archived(book.isArchived())
                 .shareable(book.isShareable())
                 .owner(book.getOwner().fullName())
-                //.cover() - TO-DO implement
+                .cover(FileUtils.readFileFromLocation(book.getBookCover()))
                 .build();
     }
 
