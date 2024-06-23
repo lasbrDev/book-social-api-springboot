@@ -42,5 +42,8 @@ application:
   mailing:
     frontend:
       activation-url: http://localhost:/activate-account
+  file:
+    upload:
+      photos-output-path: ./uploads
 server:
   port: 8088
