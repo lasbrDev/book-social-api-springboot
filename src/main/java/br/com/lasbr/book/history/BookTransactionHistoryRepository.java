@@ -13,4 +13,11 @@ public interface BookTransactionHistoryRepository extends JpaRepository<BookTran
             WHERE history.user.id = :userId
            \s""")
     Page<BookTransactionHistory> findAllBorrowedBooks(Pageable pageable, Integer userId);
+
+    @Query("""
+            SELECT history\s
+            FROM BookTransactionHistory history
+            WHERE history.book.owner.id = :userId
+           \s""")
+    Page<BookTransactionHistory> findAllReturnedBooks(Pageable pageable, Integer userId);
 }
