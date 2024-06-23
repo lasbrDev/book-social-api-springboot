@@ -1,12 +1,14 @@
 package br.com.lasbr.book.book;
 
 import br.com.lasbr.book.common.PageResponse;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("books")
@@ -17,12 +19,14 @@ public class BookController {
     private final BookService service;
 
     @PostMapping
-    public ResponseEntity<Integer> saveBook(@Valid @RequestBody BookRequest request, Authentication connectedUser) {
+    public ResponseEntity<Integer> saveBook(
+            @Valid @RequestBody BookRequest request, Authentication connectedUser) {
         return  ResponseEntity.ok(service.save(request, connectedUser));
     }
 
     @GetMapping("{book-id}")
-    public ResponseEntity<BookResponse> findBookById(@PathVariable("book-id") Integer bookId) {
+    public ResponseEntity<BookResponse> findBookById(
+            @PathVariable("book-id") Integer bookId) {
         return ResponseEntity.ok(service.findById(bookId));
     }
 
@@ -86,5 +90,15 @@ public class BookController {
     public ResponseEntity<Integer> approveReturnBorrowBook(
             @PathVariable("book-id") Integer bookId, Authentication connectedUser) {
         return ResponseEntity.ok(service.approveReturnBorrowedBook(bookId, connectedUser));
+    }
+
+    @PostMapping(value = "/cover/{book-id}", consumes = "multipart/form-data")
+    public ResponseEntity<?> uploadBookCoverPicture(
+            @PathVariable("book-id") Integer bookId,
+            @Parameter()
+            @RequestPart("file") MultipartFile file,
+            Authentication connectedUser) {
+        service.uploadBookCoverPicture(file, connectedUser, bookId);
+        return ResponseEntity.ok().build();
     }
 }
