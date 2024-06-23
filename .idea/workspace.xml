@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b2a3c5ba-3bd4-45ba-b20c-c0918f265996" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/book/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/history/BookTransactionHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/history/BookTransactionHistoryRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +129,7 @@
       <workItem from="1718649956518" duration="6935000" />
       <workItem from="1719079649100" duration="210000" />
       <workItem from="1719098100334" duration="1572000" />
+      <workItem from="1719151195247" duration="1553000" />
     </task>
     <servers />
   </component>
