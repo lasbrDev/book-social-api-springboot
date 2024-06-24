@@ -3,14 +3,12 @@ package br.com.lasbr.book.feedback;
 import br.com.lasbr.book.book.Book;
 import br.com.lasbr.book.common.BaseEntity;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Feedback extends BaseEntity {
