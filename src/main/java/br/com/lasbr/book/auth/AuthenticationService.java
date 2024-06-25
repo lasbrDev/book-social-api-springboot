@@ -41,7 +41,7 @@ public class AuthenticationService {
 
     public void register(RegistrationRequest request) throws MessagingException {
         var userRole = roleRepository.findByName("ROLE_USER")
-                .orElseThrow(() -> new IllegalArgumentException("Role User was not initialized"));
+                .orElseThrow(() -> new IllegalStateException("Role User was not initialized"));
         var user = User.builder()
                 .firstName(request.getFirstName())
                 .lastName(request.getLastName())
@@ -77,7 +77,6 @@ public class AuthenticationService {
     }
 
     private String generateActivationCode() {
-        int codeLength = 6;
         String characters = "0123456789";
         StringBuilder codeBuilder = new StringBuilder();
         SecureRandom secureRandom = new SecureRandom();
@@ -100,7 +99,7 @@ public class AuthenticationService {
         return AuthenticationResponse.builder().token(jwtToken).build();
     }
 
-    //@Transactional
+    @Transactional
     public void activateAccount(String token) throws MessagingException {
         Token savedToken = tokenRepository.findByToken(token)
                 .orElseThrow(() -> new RuntimeException("Invalid token!"));
