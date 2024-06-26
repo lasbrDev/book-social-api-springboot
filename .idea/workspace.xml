@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b2a3c5ba-3bd4-45ba-b20c-c0918f265996" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/auth/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/auth/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/config/ApplicationAuditAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/config/ApplicationAuditAware.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/email/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/email/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/config/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/auth/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/auth/AuthenticationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/config/ApplicationAuditAware.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/config/ApplicationAuditAware.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/email/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/lasbr/book/email/EmailService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +134,9 @@
       <workItem from="1719191795631" duration="1883000" />
       <workItem from="1719257500250" duration="3923000" />
       <workItem from="1719319464288" duration="2447000" />
+      <workItem from="1719343054198" duration="169000" />
+      <workItem from="1719347589612" duration="1761000" />
+      <workItem from="1719406337494" duration="2742000" />
     </task>
     <servers />
   </component>
