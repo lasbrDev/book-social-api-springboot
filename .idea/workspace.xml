@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b2a3c5ba-3bd4-45ba-b20c-c0918f265996" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/feedback/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/feedback/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/auth/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/auth/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/config/ApplicationAuditAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/config/ApplicationAuditAware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/email/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/lasbr/book/email/EmailService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +132,7 @@
       <workItem from="1719151195247" duration="1553000" />
       <workItem from="1719191795631" duration="1883000" />
       <workItem from="1719257500250" duration="3923000" />
+      <workItem from="1719319464288" duration="2447000" />
     </task>
     <servers />
   </component>
