@@ -45,10 +45,14 @@ public class EmailService {
         MimeMessageHelper helper = new MimeMessageHelper(
                 mimeMessage, MULTIPART_MODE_MIXED, UTF_8.name());
 
+        //TODO - activation token for user
+
         Map<String, Object> properties = new HashMap<>();
         properties.put("username", username);
         properties.put("confirmationUrl", confirmationUrl);
         properties.put("activation_code", activationCode);
+
+        log.info("Sending email with confirmation URL: {}", confirmationUrl);
 
         Context context = new Context();
         context.setVariables(properties);
